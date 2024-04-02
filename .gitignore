@@ -1,0 +1,4 @@
+# Ignorar a pasta vendor e os arquivos do Composer
+vendor/
+composer.phar
+composer.lock
