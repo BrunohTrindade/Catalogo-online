@@ -13,8 +13,8 @@
 - Com o padrão MVC, foi abordado um **sistema de rotas**.
 
 ### Templates Utilizados
-- **Catálogo (Frontend):** [![Template Colorlib](https://img.shields.io/badge/Template-Colorlib-blue?style=flat-square&logo=visual-studio-code)](https://colorlib.com/)
-- **Dashboard do Administrador (Backend):** [![AdminLTE](https://img.shields.io/badge/AdminLTE-Admin%20Dashboard-blue?style=flat-square&logo=visual-studio-code)](https://adminlte.io/)
+- **Catálogo:** [![Template Colorlib](https://img.shields.io/badge/Template-Colorlib-blue?style=flat-square&logo=visual-studio-code)](https://colorlib.com/)
+- **Dashboard do Administrador:** [![AdminLTE](https://img.shields.io/badge/AdminLTE-Admin%20Dashboard-blue?style=flat-square&logo=visual-studio-code)](https://adminlte.io/)
 
 
 -----
@@ -29,14 +29,14 @@
 - Controla todos os produtos, adicionando, editando e removendo e relaciona com a categoria adequada;
 - Adiciona e altera os dados do produto, dimensões, peso e imagens;
 - Controla todas as categorias adicionando, editando e removendo;
-- Adiciona e altera nome e descrição das categorias
+- Adiciona e altera nome e descrição das categorias.
 
 ### Usuário 👥
 - Se registra;
 - Faz Login;
 - Adiciona e remove os produtos, bem como a quantidade, ao carrinho;
-- Cadastra seus dados pessoais como endereço e CPF
-- O sistema permite ter mais de um endereço
+- Cadastra seus dados pessoais como endereço e CPF;
+- O sistema permite ter mais de um endereço;
 - O motivo do cadastro dos dados pessoais é a possível futura integração com finalização de pagamento na própria plataforma;
 - Trocar senha;
 - Esqueceu a senha;
@@ -82,9 +82,11 @@ define('DBNAME', 'seu_banco_de_dados');
 define('PORT', 3307);
 ```
 #### Passo 4: Acesso ao Projeto
-Abra o seu navegador.
-Digite http://localhost/Catalogo-online na barra de endereços.
+
+- Abra o seu navegador.
+- Digite http://localhost/Catalogo-online na barra de endereços.
 O seu projeto deve estar agora acessível e pronto para uso.
+
 -----
 ### Considerações Finais 🌟
 
