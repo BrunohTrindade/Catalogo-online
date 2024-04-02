@@ -1,5 +1,6 @@
 <?php
 extract($this->data['product'][0]);
+var_dump($this->data);
 ?>
 <div class="hero-wrap hero-bread" style="background-image: url('<?= URL ?>App/Catalog/Views/Templates/images/28154905_7342621.jpg');">
 	<div class="container">

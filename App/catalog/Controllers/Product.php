@@ -44,7 +44,7 @@ class Product
 
         $this->data['related'][$i]['name_link'] = Util::clearUrl($this->data['related'][$i]['product_name']);
         if ($this->data['related'][$i]['discount'] !== NULL) {
-          // Calcula e atribui o desconto para 'related'[0]
+          // Calcula e atribui o desconto para 'related'
           $this->data['related'][$i]['with_discount'] = Util::calculateDiscount($this->data['related'][$i]['price'], $this->data['related'][$i]['discount']);
         }
       }

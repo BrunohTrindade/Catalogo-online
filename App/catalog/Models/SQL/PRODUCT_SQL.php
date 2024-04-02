@@ -91,7 +91,7 @@ class PRODUCT_SQL
               WHERE 
                   p.id = :id
               GROUP BY 
-              p.id, p.name, p.quantity, p.price, p.category_id, p.description, p.discount, category.name;
+              p.id, p.name, p.quantity, p.price, p.category_id, p.description, p.discount, category.name
                LIMIT :limit";
 
     return $sql;
@@ -109,7 +109,7 @@ class PRODUCT_SQL
               ON img.product_id = p.id                       
            WHERE p.category_id = :category_id
           GROUP BY p.id, p.name, p.price, p.discount
-          LIMIT " . ITEMS_PAGE;
+          LIMIT :limit";
 
     return $sql;
   }
