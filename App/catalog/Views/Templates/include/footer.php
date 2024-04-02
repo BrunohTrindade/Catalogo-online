@@ -10,7 +10,7 @@
     <div class="row mb-5">
       <div class="col-md">
         <div class="ftco-footer-widget mb-4">
-          <h2 class="ftco-heading-2">EP PISCINAS</h2>
+          <h2 class="ftco-heading-2"><?= PROJECT_NAME ?></h2>
           <p> Produtos para piscinas. Mantenha sua piscina sempre limpa com nossos produtos e utensilios.</p>
         </div>
       </div>
@@ -20,11 +20,11 @@
           <h2 class="ftco-heading-2">Tem alguma duvida?</h2>
           <div class="block-23 mb-3">
             <ul>
-              <li><span class="icon icon-map-marker"></span><span class="text">Rua Mário Vidotte, 195, Jardim planalto - Londrina PR</span></li>
-              <li><a href="https://wa.me/5543999308446?text=Olá,+vim+através+do+site+..."><span class="icon icon-phone"></span><span class="text">
-                    Enimar (43) 999308446 | Sandra (43) 984473245 </span></a></li>
+              <li><span class="icon icon-map-marker"></span><span class="text"><?= ADDRESS ?></span></li>
+              <li><a href="https://wa.me/55<?= DDD_TEL . TELL_1 ?>?text=Olá,+vim+através+do+site+..."><span class="icon icon-phone"></span><span class="text">
+              <?= NAME_TELL_1 ?> (<?= DDD_TEL ?>) <?= TELL_1 ?> | <?= NAME_TELL_2 ?> (<?= DDD_TEL ?>) <?= TELL_2 ?> </span></a></li>
               <li><a href="#"><span class="icon icon-envelope"></span><span class="text">eppiscinas@hotmail.com</span></a></li>
-              <li><span class="icon icon-circle"></span><span class="text">CNPJ 12870679/000159</span></li>
+              <li><span class="icon icon-circle"></span><span class="text">CNPJ <?= CNPJ ?></span></li>
             </ul>
           </div>
         </div>

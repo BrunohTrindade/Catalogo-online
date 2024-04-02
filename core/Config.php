@@ -7,12 +7,13 @@ class Config
   protected function config(): void
   {
     //URL do Projeto
-    define('URL', 'https://'.$_SERVER['HTTP_HOST'].'/catalog/');
-    define('URLADM', 'https://localhost/catalog/adm/');
-    define('URL_PRODUCT', URL.'App/catalog/public/images/');
-
-    define('CONTROLLER', 'Home'); //Pagina inicial
-    define('CONTROLLER_ERRO', 'Erro');
+    define('URL', 'https://'.$_SERVER['HTTP_HOST'].'/catalog/');  // Raiz
+    define('URLADM', 'https://localhost/catalog/adm/');           // Dashboard adm
+    define('URL_PRODUCT', URL.'App/catalog/public/images/');      // caminho das imagens
+    define('PROJECT_NAME', 'CATALOGO ONLINE');                    // nome do projeto
+    
+    define('CONTROLLER', 'Home');           //Pagina inicial
+    define('CONTROLLER_ERRO', 'Erro');      //Página Erro
 
     //Credenciais Banco de Dados
     define('HOST', 'localhost');
@@ -22,8 +23,14 @@ class Config
     define('PORT', 3307);
 
     //Dados de contato
-    define('EMAIL_ADM', 'bruno_henriquet@live.com');
-    define('TELEFONE', '4333333');
+    define('EMAIL', 'eppiscinas@hotmail.com');
+    define('TELL_1', '999308446');
+    define('NAME_TELL_1', 'Enimar');
+    define('DDD_TEL', '43');
+    define('TELL_2', '984473245');
+    define('NAME_TELL_2', 'Sandra');
+    define('ADDRESS', 'Rua Mário Vidotte, 195, Jardim planalto - Londrina PR');
+    define('CNPJ', '12870679/000159');
 
     //Status
     define('ACTIVE', 1);          //Status como Ativo

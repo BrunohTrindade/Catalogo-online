@@ -4,7 +4,7 @@
       <a href="product-list" class="brand-link">
         <span class="brand-text font-weight-light">
           <strong>
-           <center> EP PISCINAS</center>
+           <center> <?= PROJECT_NAME ?></center>
           </strong>
         </span>
       </a>
