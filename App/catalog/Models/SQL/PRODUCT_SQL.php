@@ -86,9 +86,8 @@ class PRODUCT_SQL
              WHERE p.status= :status  AND c.id = :category_id
           GROUP BY p.id, 
                    p.name, 
-                   p.price, 
-                   p.discount
-          ORDER BY RAND() LIMIT ". ITEMS_PAGE . " OFFSET " . $offset;
+                   p.price, p.discount
+            ORDER BY RAND() LIMIT ". ITEMS_PAGE . " OFFSET " . $offset;
 
     return $sql;
   }
@@ -97,14 +96,13 @@ class PRODUCT_SQL
   {
     $sql = "SELECT p.id as id_p, 
                    p.name as product_name, 
-                   p.quantity, 
-                   p.price, 
+                   p.quantity, p.price, 
                    p.category_id, 
                    p.description, 
                    p.discount,
-                   category.name as category_name
+                   category.name as category_name,
                    GROUP_CONCAT(img.name) as img_name,
-                   GROUP_CONCAT(img.path) as path,
+                   GROUP_CONCAT(img.path) as path
               FROM 
                   product as p
               LEFT JOIN 
@@ -114,7 +112,7 @@ class PRODUCT_SQL
               WHERE 
                   p.id = :id
               GROUP BY 
-                  p.id, p.name, p.quantity, p.price, p.category_id, p.description, p.discount, category.name
+              p.id, p.name, p.quantity, p.price, p.category_id, p.description, p.discount, category.name
                LIMIT :limit";
 
     return $sql;
