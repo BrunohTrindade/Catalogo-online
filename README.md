@@ -111,9 +111,10 @@ define('DBNAME', 'seu_banco_de_dados');
 define('PORT', 3307);
 ```
 ### Passo 6: Acesso ao Projeto
-Abra o seu navegador.
-Digite http://localhost/Catalogo-online na barra de endereços.
-O seu projeto deve estar agora acessível e pronto para uso.
+
+- Abra o seu navegador.
+- Digite http://localhost/Catalogo-online na barra de endereços.
+- O seu projeto deve estar agora acessível e pronto para uso.
 -----
 ### Considerações Finais 🌟
 
