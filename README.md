@@ -13,8 +13,8 @@
 - Com o padrão MVC, foi abordado um **sistema de rotas**.
 
 ### Templates Utilizados
-- **Catálogo:** [![Template Colorlib](https://img.shields.io/badge/Template-Colorlib-blue?style=flat-square&logo=visual-studio-code)](https://colorlib.com/)
-- **Dashboard do Administrador:** [![AdminLTE](https://img.shields.io/badge/AdminLTE-Admin%20Dashboard-blue?style=flat-square&logo=visual-studio-code)](https://adminlte.io/)
+- **Catálogo (Frontend):** [![Template Colorlib](https://img.shields.io/badge/Template-Colorlib-blue?style=flat-square&logo=visual-studio-code)](https://colorlib.com/)
+- **Dashboard do Administrador (Backend):** [![AdminLTE](https://img.shields.io/badge/AdminLTE-Admin%20Dashboard-blue?style=flat-square&logo=visual-studio-code)](https://adminlte.io/)
 
 
 -----
@@ -29,14 +29,14 @@
 - Controla todos os produtos, adicionando, editando e removendo e relaciona com a categoria adequada;
 - Adiciona e altera os dados do produto, dimensões, peso e imagens;
 - Controla todas as categorias adicionando, editando e removendo;
-- Adiciona e altera nome e descrição das categorias.
+- Adiciona e altera nome e descrição das categorias
 
 ### Usuário 👥
 - Se registra;
 - Faz Login;
 - Adiciona e remove os produtos, bem como a quantidade, ao carrinho;
-- Cadastra seus dados pessoais como endereço e CPF;
-- O sistema permite ter mais de um endereço;
+- Cadastra seus dados pessoais como endereço e CPF
+- O sistema permite ter mais de um endereço
 - O motivo do cadastro dos dados pessoais é a possível futura integração com finalização de pagamento na própria plataforma;
 - Trocar senha;
 - Esqueceu a senha;
@@ -64,12 +64,41 @@
 ```bash
 git clone https://github.com/BrunohTrindade/Catalogo-online
 ```
-#### Passo 2: Configuração do Banco de Dados
-Abra o phpMyAdmin no seu navegador ou SGBD Mysql
-Crie um novo banco de dados com o nome desejado para o seu projeto.
-Importe o arquivo de backup para o banco de dados recém-criado.
+### Passo 2: Configuração do Banco de Dados
+- Abra o phpMyAdmin no seu navegador ou SGBD MySQL.
+- Crie um novo banco de dados com o nome desejado para o seu projeto.
+- Importe o arquivo de backup para o banco de dados recém-criado.
 
-#### Passo 3: Configuração do Ambiente
+### Passo 3: Instalação do Composer
+- Faça o download e instale o Composer em sua máquina. Você pode encontrá-lo em [getcomposer.org](https://getcomposer.org/).
+- Após a instalação, abra o terminal ou prompt de comando e navegue até o diretório raiz do seu projeto.
+- Execute o seguinte comando para inicializar o arquivo `composer.json`:
+
+```bash
+composer init
+```
+#### Passo 4: Configuração do Autoload PSR-4
+- Abra o arquivo composer.json no seu editor de código.
+- Adicione o seguinte código ao objeto autoload para configurar o PSR-4:
+
+```bash
+"autoload": {
+    "psr-4": {
+      "App\\": "app",
+      "Core\\" :"core",
+      "Catalog\\" : "app/catalog",
+      "Adm\\": "app/adm"
+    },
+    "require": {}
+  }
+  ```
+  
+- Salve o arquivo composer.json.
+- Execute o seguinte comando para carregar as classes automaticamente de acordo com o PSR-4:
+```bash
+composer dump-autoload
+```
+#### Passo 5: Configuração do Ambiente
 - Abra o arquivo de configuração do seu projeto, que está em: `C:\xampp\htdocs\Catalogo-online\core\Config.php`.
 - Atualize as configurações do banco de dados com o nome do banco de dados, nome de usuário e senha (se necessário).
 
@@ -81,12 +110,10 @@ define('PASS', 'sua_senha');
 define('DBNAME', 'seu_banco_de_dados');
 define('PORT', 3307);
 ```
-#### Passo 4: Acesso ao Projeto
-
-- Abra o seu navegador.
-- Digite http://localhost/Catalogo-online na barra de endereços.
+#### Passo 6: Acesso ao Projeto
+Abra o seu navegador.
+Digite http://localhost/Catalogo-online na barra de endereços.
 O seu projeto deve estar agora acessível e pronto para uso.
-
 -----
 ### Considerações Finais 🌟
 
