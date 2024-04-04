@@ -44,8 +44,10 @@
 -----
 
 ### Capturas de Tela 🖼️
-![Página Inicial](screenshot_home.png)
-![Painel Administrativo](screenshot_admin.png)
+![Página Inicial](screenshots/screen.png)
+![Página Shop](screenshots/shop_screen.png)
+![Página Minha conta](screenshots/account_screen.png)
+![Página Meus Endereços](screenshots/address_screen.png)
 
 -----
 
