@@ -72,7 +72,7 @@ if(!empty($this->data[0]))
             <div class="col-md-6">
               <div class="form-group">
                 <label for="postcodezip">Complemento</label>
-                <input type="text"  class="form-control required" name="complement" id="complement" value="<?= $complement ?? "" ?>">
+                <input type="text"  class="form-control" name="complement" id="complement" value="<?= $complement ?? "" ?>">
               </div>
             </div>
             <div class="w-100"></div>

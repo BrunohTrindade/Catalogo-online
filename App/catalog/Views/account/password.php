@@ -3,7 +3,7 @@
           <div class="col-md-10 d-flex ftco-animate">
             <div class="blog-entry align-self-stretch d-md-flex">
               <form class="billing-form" id="formPass">
-                <h3 class="mb-4 billing-heading text-center mx-auto">Trocar Senha <span class=""><?= PROJECT_NAME ?></span></h3>
+                <h3 class="mb-4 billing-heading text-center mx-auto">Trocar Senha</h3>
                 <div class="row align-items-end">
 
                   <div id="verifyPass" class="col-md-12">
