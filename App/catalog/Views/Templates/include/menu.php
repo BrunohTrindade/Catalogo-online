@@ -31,7 +31,7 @@
           </li>
         <?php } else { ?>
           <li class="nav-item">
-            <a href="<?= $_SESSION['type'] == USER_COMMON ? URL . "account" : URL . "product-list"  ?>" class="nav-link"><span class="ion-ios-person"></span>Minha conta (<?= $_SESSION['name'] ?>)</a>
+            <a href="<?= $_SESSION['type'] == USER_COMMON ? URL . "account" : URL . "product-list"  ?>" class="nav-link"><span class="ion-ios-person"></span> Minha conta</a>
           </li>
           <li class="nav-item">
             <a href="<?= URL ?>logout" class="nav-link"><span class="ion-ios-close"></span> Sair</a>
