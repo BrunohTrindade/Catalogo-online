@@ -31,7 +31,7 @@
 - Controla todas as categorias adicionando, editando e removendo;
 - Adiciona e altera nome e descrição das categorias
 
-### Usuário 👥
+## Usuário 👥
 - Se registra;
 - Faz Login;
 - Adiciona e remove os produtos, bem como a quantidade, ao carrinho;
@@ -54,9 +54,9 @@
 2. Faça o import para o SGBD da sua máquina.
 -----
 
-### Guia para instalação do projeto no XAMPP
+## Guia para instalação do projeto no XAMPP
 
-#### Passo 1: Clone do Repositório
+### Passo 1: Clone do Repositório
 - Abra o terminal ou prompt de comando.
 - Navegue até a pasta `htdocs` do seu XAMPP (normalmente localizada em `C:\xampp\htdocs`).
 - Execute o seguinte comando para clonar o repositório:
@@ -77,7 +77,7 @@ git clone https://github.com/BrunohTrindade/Catalogo-online
 ```bash
 composer init
 ```
-#### Passo 4: Configuração do Autoload PSR-4
+### Passo 4: Configuração do Autoload PSR-4
 - Abra o arquivo composer.json no seu editor de código.
 - Adicione o seguinte código ao objeto autoload para configurar o PSR-4:
 
@@ -98,7 +98,7 @@ composer init
 ```bash
 composer dump-autoload
 ```
-#### Passo 5: Configuração do Ambiente
+### Passo 5: Configuração do Ambiente
 - Abra o arquivo de configuração do seu projeto, que está em: `C:\xampp\htdocs\Catalogo-online\core\Config.php`.
 - Atualize as configurações do banco de dados com o nome do banco de dados, nome de usuário e senha (se necessário).
 
@@ -110,10 +110,11 @@ define('PASS', 'sua_senha');
 define('DBNAME', 'seu_banco_de_dados');
 define('PORT', 3307);
 ```
-#### Passo 6: Acesso ao Projeto
-Abra o seu navegador.
-Digite http://localhost/Catalogo-online na barra de endereços.
-O seu projeto deve estar agora acessível e pronto para uso.
+### Passo 6: Acesso ao Projeto
+
+- Abra o seu navegador.
+- Digite http://localhost/Catalogo-online na barra de endereços.
+- O seu projeto deve estar agora acessível e pronto para uso.
 -----
 ### Considerações Finais 🌟
 
