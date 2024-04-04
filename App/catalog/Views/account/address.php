@@ -20,7 +20,7 @@ if(!empty($this->data[0]))
                   <select name="select" id="select" class="form-control required" onchange="selectAddress('formAddress'); showButtonAddress()">
                     <option selected value="new">Novo endereço</option>
                     <?php foreach($this->data['ids'] as $key => $value) { ?>
-                      <option <?= $this->data[0]['address_id'] == $key ? "selected" : ""?> value="<?= $key ?>"><?= $value." ".$key ?> </option>
+                      <option <?= $this->data[0]['address_id'] == $key ? "selected" : ""?> value="<?= $key ?>"><?= $value ?> </option>
                       <?php }  ?>
                   </select>
                 </div>
