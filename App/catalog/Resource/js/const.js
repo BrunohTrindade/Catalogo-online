@@ -1,5 +1,5 @@
 //#region URL
-const URL_DIR = window.location.origin + '/ep/';
+const URL_DIR = window.location.origin + '/catalog/';
 
 //#endregion
 
