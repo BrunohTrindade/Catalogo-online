@@ -10,7 +10,7 @@ class Config
     define('URL', 'https://'.$_SERVER['HTTP_HOST'].'/catalog/');  // Raiz
     define('URLADM', 'https://localhost/catalog/adm/');           // Dashboard adm
     define('URL_PRODUCT', URL.'App/catalog/public/images/');      // caminho das imagens
-    define('PROJECT_NAME', 'CATALOGO ONLINE');                    // nome do projeto
+    define('PROJECT_NAME', '{{NOME DO PROJETO}}');                    // nome do projeto
     
     define('CONTROLLER', 'Home');           //Pagina inicial
     define('CONTROLLER_ERRO', 'Erro');      //Página Erro

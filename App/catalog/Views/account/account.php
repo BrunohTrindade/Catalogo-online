@@ -6,7 +6,7 @@
           <div class="col-md-10 d-flex ftco-animate">
             <div class="blog-entry align-self-stretch d-md-flex">
               <form method="POST" class="billing-form" id="formAccount">
-                <h3 class="mb-4 billing-heading text-center mx-auto">Minha conta <span class="">EP PISCINAS </span></h3>
+                <h3 class="mb-4 billing-heading text-center mx-auto">Minha conta <span class=""><?= PROJECT_NAME ?></span></h3>
                 <div class="row align-items-end">
                   <div class="col-md-6">
                     <div class="form-group">
