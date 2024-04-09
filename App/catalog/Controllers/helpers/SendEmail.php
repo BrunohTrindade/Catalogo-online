@@ -33,7 +33,7 @@ class SendEmail
 
     $this->data['toEmail'] = $data['email'];
     $this->data['toName'] = $data['name'];
-    $this->data['subject'] = "Recuperação de senha - EP PISCINAS";
+    $this->data['subject'] = "Recuperação de senha -" . PROJECT_NAME;
     $this->data['contentHTML'] = "Olá <b>{$data['name']}</b><br><p>Sua nova senha de acesso é: </p> <p> <b>{$data['pass']}<b></p> ";
     // $this->data['contentText'] = "Olá Cesar\n\nCadastro realizado com succeso!";
 
